@@ -1,10 +1,12 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+// import { Button } from "@/components/ui/button";
+// import { Input } from "@/components/ui/input";
+// import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
-import { useState } from "react";
+// import { useState } from "react";
 
 const Contact = () => {
+  // Estado e funções do formulário comentados pois não foi implementado
+  /*
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,6 +27,7 @@ const Contact = () => {
       [e.target.name]: e.target.value,
     });
   };
+  */
 
   const contactInfo = [
     {
@@ -82,8 +85,9 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 max-w-3xl mx-auto">
+          {/* Contact Form - Comentado pois não foi implementado */}
+          {/* 
           <div className="space-y-8 animate-slide-in">
             <div>
               <h3 className="text-2xl font-bold mb-4">Solicitar Proposta</h3>
@@ -156,6 +160,7 @@ const Contact = () => {
               </Button>
             </form>
           </div>
+          */}
 
           {/* Contact Information */}
           <div className="space-y-8 animate-fade-in">

@@ -1,14 +1,44 @@
+import { toast } from "@/hooks/use-toast";
 import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   const quickLinks = ["Home", "Sobre", "Projetos", "Contato"];
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-    { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
+    {
+      icon: Github,
+      href: import.meta.env.VITE_GITHUB_URL,
+      label: "GitHub",
+    },
+    {
+      icon: Linkedin,
+      href: import.meta.env.VITE_LINKEDIN_URL,
+      label: "LinkedIn",
+    },
+    {
+      icon: Twitter,
+      href: import.meta.env.VITE_TWITTER_URL,
+      label: "Twitter",
+    },
+    {
+      icon: Instagram,
+      href: import.meta.env.VITE_INSTAGRAM_URL,
+      label: "Instagram",
+    },
   ];
+
+  const handleSocialClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    social: (typeof socialLinks)[0]
+  ) => {
+    if (!social.href || social.href === "") {
+      e.preventDefault();
+      toast({
+        title: "Link não configurado",
+        description: `O link para ${social.label} ainda não foi implementado.`,
+      });
+    }
+  };
 
   return (
     <footer className="bg-background border-t border-border py-16">
@@ -27,10 +57,11 @@ const Footer = () => {
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-gradient-card p-2 rounded-lg border border-border hover:shadow-card transition-all duration-300 hover:scale-110 group"
+                  href={social.href || "#"}
+                  target={social.href ? "_blank" : "_self"}
+                  rel={social.href ? "noopener noreferrer" : undefined}
+                  onClick={(e) => handleSocialClick(e, social)}
+                  className="bg-gradient-card p-2 rounded-lg border border-border hover:shadow-card transition-all duration-300 hover:scale-110 group cursor-pointer"
                   aria-label={social.label}
                 >
                   <social.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />

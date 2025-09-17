@@ -1,12 +1,12 @@
-import { Brain, Rocket, Shield, Zap } from "lucide-react";
+import { Code, Rocket, Shield, Zap } from "lucide-react";
 
 const About = () => {
   const values = [
     {
-      icon: Brain,
-      title: "IA Avançada",
+      icon: Code,
+      title: "Desenvolvimento Ágil",
       description:
-        "Utilizamos inteligência artificial de ponta para criar soluções inteligentes",
+        "Utilizamos metodologias ágeis para entregar soluções eficientes e de qualidade",
     },
     {
       icon: Rocket,
@@ -73,9 +73,11 @@ const About = () => {
             Nossa Visão
           </h3>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ser reconhecida como a startup de tecnologia mais inovadora do país,
-            liderando a transformação digital e criando um futuro onde a
-            tecnologia trabalha em harmonia com as necessidades humanas.
+            Nosso compromisso é entregar produtos de alta qualidade que resolvam
+            os problemas reais dos nossos clientes. Acreditamos que a tecnologia
+            deve ser uma ferramenta para simplificar processos, aumentar a
+            produtividade e trazer resultados concretos para cada negócio que
+            atendemos.
           </p>
         </div>
       </div>
