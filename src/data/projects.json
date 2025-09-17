@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "AI Analytics Platform",
+    "description": "Plataforma de análise preditiva com IA que processa dados em tempo real e fornece insights estratégicos para tomada de decisão empresarial.",
+    "image": "/src/assets/project1.jpg",
+    "videoUrl": "https://github.com/user/repo1/raw/main/demo.mp4",
+    "technologies": ["React", "Python", "TensorFlow", "AWS"]
+  },
+  {
+    "id": 2,
+    "name": "FinTech Mobile App",
+    "description": "Aplicativo revolucionário para gestão financeira pessoal com recursos de investimento automatizado e planejamento inteligente.",
+    "image": "/src/assets/project2.jpg",
+    "videoUrl": "https://github.com/user/repo2/raw/main/demo.mp4",
+    "technologies": ["React Native", "Node.js", "Blockchain", "AI"]
+  },
+  {
+    "id": 3,
+    "name": "Cloud Infrastructure",
+    "description": "Solução completa de infraestrutura em nuvem com escalabilidade automática e segurança de nível enterprise.",
+    "image": "/src/assets/project3.jpg",
+    "videoUrl": "https://github.com/user/repo3/raw/main/demo.mp4",
+    "technologies": ["Kubernetes", "Docker", "AWS", "Terraform"]
+  }
+]
