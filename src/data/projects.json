@@ -1,26 +1,34 @@
 [
-  {
-    "id": 1,
-    "name": "AI Analytics Platform",
-    "description": "Plataforma de análise preditiva com IA que processa dados em tempo real e fornece insights estratégicos para tomada de decisão empresarial.",
-    "image": "/src/assets/project1.jpg",
-    "videoUrl": "https://github.com/user/repo1/raw/main/demo.mp4",
-    "technologies": ["React", "Python", "TensorFlow", "AWS"]
-  },
-  {
-    "id": 2,
-    "name": "FinTech Mobile App",
-    "description": "Aplicativo revolucionário para gestão financeira pessoal com recursos de investimento automatizado e planejamento inteligente.",
-    "image": "/src/assets/project2.jpg",
-    "videoUrl": "https://github.com/user/repo2/raw/main/demo.mp4",
-    "technologies": ["React Native", "Node.js", "Blockchain", "AI"]
-  },
-  {
-    "id": 3,
-    "name": "Cloud Infrastructure",
-    "description": "Solução completa de infraestrutura em nuvem com escalabilidade automática e segurança de nível enterprise.",
-    "image": "/src/assets/project3.jpg",
-    "videoUrl": "https://github.com/user/repo3/raw/main/demo.mp4",
-    "technologies": ["Kubernetes", "Docker", "AWS", "Terraform"]
-  }
+    {
+        "id": 1,
+        "name": "Gym Management System",
+        "description": "Sistema de gestão de academia com automação inteligente, focado em eficiência administrativa e experiência do aluno. Oferece CRUD de alunos, alertas automáticos de pagamento via WhatsApp, integração de pagamentos com QR Code dinâmico, geração de relatórios em PDF e gráficos financeiros interativos.",
+        "image": "https://camo.githubusercontent.com/2e79a13dec4838c7555d8c78df8a6f51163f5cad3aa782e8db081d1e687a8142/68747470733a2f2f692e696d6775722e636f6d2f486a543436667a2e706e67",
+        "videoUrl": null,
+        "technologies": [
+            "Django",
+            "Django Rest Framework",
+            "Celery",
+            "Redis",
+            "Pandas",
+            "Plotly"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Sistema Delivery",
+        "description": "Sistema completo de delivery de água com integração WhatsApp, pagamentos PIX/Cartão via Mercado Pago, painel administrativo avançado, gestão de categorias/produtos, carrinho de compras inteligente e regras de negócio complexas para controle de pedidos e pagamentos.",
+        "image": "/src/assets/project2.jpg",
+        "videoUrl": null,
+        "technologies": [
+            "Django",
+            "Python",
+            "Mercado Pago API",
+            "WhatsApp Evolution API",
+            "PostgreSQL",
+            "HTML/CSS/JS",
+            "Cloudinary",
+            "Docker"
+        ]
+    }
 ]

@@ -22,7 +22,9 @@ const Projects = () => {
   }));
 
   const openModal = (project) => {
-    setSelectedProject(project);
+    if (project.videoUrl) {
+      setSelectedProject(project);
+    }
   };
 
   const closeModal = () => {
@@ -46,11 +48,11 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8 max-w-7xl mx-auto">
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className="group bg-background rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-all duration-500 hover:-translate-y-4 animate-fade-in border border-border"
+              className="group bg-background rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-all duration-500 hover:-translate-y-4 animate-fade-in border border-border w-full max-w-sm"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Project Image */}
@@ -87,15 +89,17 @@ const Projects = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-3 pt-4">
-                  <Button
-                    variant="default"
-                    size="sm"
-                    className="flex-1"
-                    onClick={() => openModal(project)}
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    Ver Projeto
-                  </Button>
+                  {project.videoUrl && (
+                    <Button
+                      variant="default"
+                      size="sm"
+                      className="flex-1"
+                      onClick={() => openModal(project)}
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      Ver Projeto
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>
