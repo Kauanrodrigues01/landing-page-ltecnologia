@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Gym Management System",
         "description": "Sistema de gestão de academia com automação inteligente, focado em eficiência administrativa e experiência do aluno. Oferece CRUD de alunos, alertas automáticos de pagamento via WhatsApp, integração de pagamentos com QR Code dinâmico, geração de relatórios em PDF e gráficos financeiros interativos.",
-        "image": "https://camo.githubusercontent.com/2e79a13dec4838c7555d8c78df8a6f51163f5cad3aa782e8db081d1e687a8142/68747470733a2f2f692e696d6775722e636f6d2f486a543436667a2e706e67",
+        "image": "https://raw.githubusercontent.com/Kauanrodrigues01/Kauanrodrigues01/main/images/projetos/sistema-financas/members.png",
         "videoUrl": null,
         "technologies": [
             "Django",
@@ -18,7 +18,7 @@
         "id": 2,
         "name": "Sistema Delivery",
         "description": "Sistema completo de delivery de água com integração WhatsApp, pagamentos PIX/Cartão via Mercado Pago, painel administrativo avançado, gestão de categorias/produtos, carrinho de compras inteligente e regras de negócio complexas para controle de pedidos e pagamentos.",
-        "image": "/src/assets/project2.jpg",
+        "image": "https://raw.githubusercontent.com/Kauanrodrigues01/Kauanrodrigues01/main/images/projetos/sistema-delivery/dashboard.png",
         "videoUrl": null,
         "technologies": [
             "Django",

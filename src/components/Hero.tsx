@@ -1,5 +1,6 @@
 import heroImage from "@/assets/hero-tech.jpg";
 import { Button } from "@/components/ui/button";
+import { handleSmoothScroll } from "@/lib/smoothScroll";
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
@@ -27,10 +28,18 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="group">
-                Conheça Nossos Projetos
-                <ArrowRight className="transition-transform group-hover:translate-x-1" />
-              </Button>
+              <a
+                href="#projetos"
+                className="group"
+                onClick={handleSmoothScroll}
+              >
+                <Button variant="hero" size="lg" asChild>
+                  <span className="flex items-center">
+                    Conheça Nossos Projetos
+                    <ArrowRight className="transition-transform group-hover:translate-x-1 ml-2" />
+                  </span>
+                </Button>
+              </a>
             </div>
 
             {/* Stats */}

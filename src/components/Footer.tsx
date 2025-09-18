@@ -1,4 +1,5 @@
 import { toast } from "@/hooks/use-toast";
+import { handleSmoothScroll } from "@/lib/smoothScroll";
 import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
@@ -81,6 +82,7 @@ const Footer = () => {
                   key={link}
                   href={`#${link.toLowerCase()}`}
                   className="block text-muted-foreground hover:text-primary transition-colors duration-300"
+                  onClick={handleSmoothScroll}
                 >
                   {link}
                 </a>

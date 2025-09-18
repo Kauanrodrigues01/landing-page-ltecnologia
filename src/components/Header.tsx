@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { handleSmoothScroll } from "@/lib/smoothScroll";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -22,6 +23,7 @@ const Header = () => {
               key={item}
               href={`#${item.toLowerCase()}`}
               className="text-foreground hover:text-primary transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+              onClick={handleSmoothScroll}
             >
               {item}
             </a>
@@ -62,7 +64,10 @@ const Header = () => {
                 key={item}
                 href={`#${item.toLowerCase()}`}
                 className="text-foreground hover:text-primary transition-colors duration-300 py-2"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => {
+                  handleSmoothScroll(e);
+                  setIsMenuOpen(false);
+                }}
               >
                 {item}
               </a>
