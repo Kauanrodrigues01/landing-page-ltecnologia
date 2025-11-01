@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "name": "Gym Management System",
-        "description": "Sistema de gestão de academia com automação inteligente, focado em eficiência administrativa e experiência do aluno. Oferece CRUD de alunos, alertas automáticos de pagamento via WhatsApp, integração de pagamentos com QR Code dinâmico, geração de relatórios em PDF e gráficos financeiros interativos.",
+        "name": "Sistema de Gestão de Mensalidades",
+        "description": "Sistema completo de gestão financeira e controle de mensalidades com automação inteligente. Perfeito para qualquer negócio que trabalha com cobranças recorrentes. Oferece CRUD de clientes, alertas automáticos de pagamento via WhatsApp, integração de pagamentos com QR Code dinâmico, geração de relatórios em PDF e gráficos financeiros interativos para análise detalhada do fluxo de caixa.",
         "image": "https://raw.githubusercontent.com/Kauanrodrigues01/Kauanrodrigues01/main/images/projetos/sistema-financas/members.png",
         "videoUrl": null,
         "technologies": [
